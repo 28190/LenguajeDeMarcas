@@ -19,3 +19,26 @@ header img{
 	float: left;
 	padding-top: 20px;
 }
+
+nav{
+	position:sticky;
+	top: 0; /* Para que se quede arriba */
+	overflow: auto;
+	width: 100%;
+	background-color: #376239;
+}
+
+nav a {
+	margin:0%;
+	float: left;
+	color: #ffffff;
+	padding: 1.4% 0%; /* 0 en el eje X para que se ajuste bien */
+	text-decoration: none; /* Quitar el subrayado de los links */
+	width: 25%; /* 100% dividido numero de "a"s que tengo */
+	text-align:center;
+}
+
+nav a:hover {
+	background-color: #549757;
+}
+
