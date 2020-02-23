@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang=es>
+	<head>
+		<title>Manual HTML</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Javier Calvo García">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header class="main_header">
+			<figure>
+				<img id="html5_img" src="Resources/HTML5 logo.png" width="90" height="90" alt="logo HTML5">
+				<img id="css3_img" src="Resources/CSS3 logo.png" width="64" height="90" alt="logo CSS3">
+			</figure>
+			<h1>Manual HTML y CSS</h1>
+		</header>
+		<pre>
+#contentTable ul * {
+	text-decoration: none; /* Quitar el subrayado de los links */
+	font-size: 30px;
+}
+
+body {
+	margin: 0px 30px	/* Añadimos margen al body para que se vea más bonito visualmente. */
+}
+
+header.main_header {
+	width: 100%;
+	background-color: #FFBE33;
+}
+
+header figure img {
+	padding-top: 11px;
+}
+
+#html5_img {	
+	float: left;
+}
+
+#css3_img {
+	float: right;
+}
+
+header h1 {
+	text-align: center;
+	font-family: monaco, Consolas, Lucida Console, monospace;
+	font-size: 90px;
+	margin: 0%;
+}
+
+
+footer {
+	background-color: #376239;
+}
+
+pre {
+	display: inline-block;
+	background-color: #F8F8F8;
+	font-family: Consolas,"courier new"; /* Fuente en forma de código */
+	border-color: #549757;
+	border-style: dashed;
+	padding: 1%;
+}
+
+/* Para que conserve el formato cuando lo usamos en los títulos */
+pre.Título {
+	background-color: inherit;
+	border: none;
+	padding: 0%;
+	margin: 0%;
+}
+
+pre.Normal {
+	background-color: inherit;
+	border: none;
+	padding: 0%;
+	margin: 0%;
+}
+
+pre *{
+	margin: 0%;
+}
+
+.Ejemplo {
+	overflow:auto;
+	position: relative;
+}
+
+.Ejemplo aside {
+	position: absolute;
+	top: 50%;
+	left: 68%;
+	transform: translateY(-50%);
+	width: 32%;
+}
+
+.Ejemplo aside a {
+	float:right;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 25px;
+	background-color: #806000;
+	color: white;
+	border-radius: 50%;
+	font-size: 40px;
+	margin: 0px 60px
+}
+
+.Ejemplo aside a:hover {
+	background-color: #e6ac00;
+	color: black;
+}
+
+codigo_marron {
+	color: brown;
+}
+
+codigo_rojo {
+	color: red;
+}
+
+codigo_azul {
+	color: mediumblue;
+}
+
+doctype_color {
+	color: #555;
+}
+
+nota {
+	display: inline-block;
+	margin: 16px 0px 16px 0px;
+	border: 3px;
+	padding: 8px 8px 8px 32px;
+	font-style: italic;
+}
+
+h2 {
+	font-size: 1.25em;
+	color: red;
+}
+
+h3 {
+	color: DarkTurquoise;
+}
+
+h4 {
+	color: #6A5ACD;
+}
+
+ul.lista1{
+	list-style-type:square;
+	list-style-position: inside;
+}
+
+ul.lista2{
+	list-style-image: url("https://i.imgur.com/nvfBX3u.png");
+}
+
+#TablaEjemplo1, #TablaEjemplo1 td, #TablaEjemplo1 th {	
+	border: 5px solid blue;
+	border-collapse: collapse;
+	width: 30%; /* Hacer más larga la tabla */
+}
+
+#TablaEjemplo1 th {
+	height: 35px;
+	color:	red;
+	vertical-align: top;
+}
+
+#TablaEjemplo1 th, #TablaEjemplo1 td {
+	padding: 15px;
+}
+
+#TablaEjemplo1 tfoot td {
+	color: green;
+	text-align: center;
+}
+
+#TablaEjemplo1 tr:hover {
+	background-color: #f5f5f5;
+}
+
+a {
+	target: _blank;
+}
+		</pre>
+	</body>
+</html>
