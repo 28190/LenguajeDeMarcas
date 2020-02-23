@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang=es>
+	<head>
+		<title>Cuerpo HTML</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Javier Calvo García">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="cuerpo_css.css">
+	</head>
+	<body>
+		<header class="main_header">
+			<figure>
+				<img id="html5_img" src="Resources/HTML5 logo.png" width="90" height="90" alt="logo HTML5">
+				<img id="css3_img" src="Resources/CSS3 logo.png" width="64" height="90" alt="logo CSS3">
+			</figure>
+			<h1>Manual HTML y CSS</h1>
+		</header>
+		<section>
+			<header>
+				<h2 id="ap7">Cuerpo &rarr; <pre class="Título">&lt;body&gt;</pre></h2>
+			</header>
+			<main>
+				La etiqueta cuerpo tiene el contenido del documento, es decir, lo que sí veremos desde el navegador, como texto, imágenes, tables, etc...
+				<article>
+					<header>
+						<h3 id="ap8">Elementos</h3>
+					</header>
+					Los elementos HTML normalmente comienzan con <pre class="Normal">&lt;</pre> y acaban con <pre class="Normal">&gt;</pre>.<br>
+					Los elementos son la base del HTML. Podemos distinguir entre varios tipos.
+					<section>
+						<header>
+							<h4>Elemento vacio &rarr; <pre class="Título">&lt;img src="Resources/HTML5 logo.png" /&gt;</pre></h4>
+						</header>
+						Este tipo de elementos se abren y cierran en una sola etiqueta.<br>
+						Es opcional escribir el <pre class="Normal">/</pre> del final.
+					</section>
+					<section>
+						<header>
+							<h4>Elemento anidado &rarr; <pre class="Título">&lt;head&gt;&lt;/head&gt;</pre></h4>
+						</header>
+						Los elementos pueden contener otros elementos.
+					</section>
+				</article>
+				<hr>
+				<article>
+					<header>
+						<h3 id="ap9">Atributos</h3>
+					</header>
+					Los elementos HTML pueden tener atributos, éstos proporcionan información adicional a los elementos.
+					Su sintaxis es: <pre class="Normal">nombre_del_atributo="valor"</pre>.
+					<section class="Ejemplo">
+						<header>
+							<h4>Ejemplo</h4>
+						</header>
+						<pre>&lt;a href="html_main.html"&gt;Esto es un link&lt;/a&gt;</pre>
+					</section>
+				</article>
+				<hr>
+				<article>
+					<header>
+						<h3 id="ap10">Semántica</h3>
+					</header>
+					Con la nueva versión de HTML5 han surgido nuevas etiquetas con las que trabajar que enriquecen semánticamente nuestro código,
+					en el sentido de que describen lo que contienen al navegador o programador que lea el código.<br>
+					<p></p>
+					Hasta ahora en las páginas web se usaban elementos como:
+					<pre class="Normal">&lt;div&gt; o &lt;span&gt;</pre><br>
+					Que no indican nada sobre la información que contienen.
+					<p></p>
+					Sin embargo ahora tenemos elementos como:
+					<pre class="Normal">&lt;table&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;figure&gt;</pre><br>
+					Que nos dan una idea más clara de lo que van a contener.
+				</article>
+				<hr>
+				<article>
+					<header>
+						<h3 id="ap11">Modelo de caja</h3>
+					</header>
+					<aside class="ModeloCaja">
+						<table id="modelo_de_caja" border="1">
+							<thead>
+								<tr>
+									<td>Color</td>
+									<td>Zona</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td bgcolor="#f9cc9d"></td>
+									<td>Margen</td>
+								</tr>
+								<tr>
+									<td bgcolor="#fddd9b"></td>
+									<td>Borde</td>
+								</tr>
+								<tr>
+									<td bgcolor="#c3d08b"></td>
+									<td>Relleno</td>
+								</tr>
+							</tbody>
+						</table>
+						<modelo_de_caja>
+							<margen>
+								<borde>
+									<relleno>
+										<contenido>
+											Contenido
+										</contenido>
+									</relleno>
+								</borde>
+							</margen>
+						</modelo_de_caja>
+					</aside>
+					En una página web, a cada elemento se le puede considerar una caja.<br>
+					Esta caja está estructurada de la siguiente forma.
+					<p>&nbsp;<p>
+					<p>&nbsp;</p>
+				</article>
+				<hr>
+				<article>
+					<header>
+						<h3 id="ap12">Simbolos especiales</h3>
+					</header>
+					<p>
+						Hay algunos caracteres que no se pueden usar como texto en HTML, ya que forman parte de una lista de caracteres especiales 
+						y el procesador los entiende como código, en lugar de texto.<br>
+						En su lugar hay que usar unas entidades propias de HTML.
+					</p>
+					<p>
+						Algunos son:
+					</p>
+					<table border="1">
+						<thead>
+							<tr>
+								<td>Caracter</td>
+								<td>Entidad</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>&lt;</td>
+								<td>&amp;lt;</td>
+							</tr>
+							<tr>
+								<td>&gt;</td>
+								<td>&amp;gt;</td>
+							</tr>
+							<tr>
+								<td>&amp;</td>
+								<td>&amp;amp;</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						<a href="https://dev.w3.org/html5/html-author/charref">Aquí</a> tenéis una lista completa: 
+					</p>
+				</article>
+				<hr>
+				<article>
+					<header>
+						<h3 id="ap13">Unidades</h3>
+					</header>
+						Muchas de las propiedades usadas de CSS utilizan unidades para determinar su longitud.
+						Las más utilizadas y remendadas son: <pre class="Normal">em, px y %</pre>.
+				</article>
+				<hr>
+				<article>
+					<header>
+						<h3 id="ap14">Comentarios</h3>
+					</header>
+						Los comentarios se escriben de la siguiente forma:
+						<pre class="Normal">&lt;!-- Esto es un comentario --&gt;</pre>
+				</article>
+			</main>
+		</section>
+		<footer>
+			&copy; 2020 Javier Calvo García
+		</footer>
+	</body>
+</html>
+</html>

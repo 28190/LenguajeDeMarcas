@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang=es>
+	<head>
+		<title>Elementos HTML</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Javier Calvo García">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header class="main_header">
+			<figure>
+				<img id="html5_img" src="Resources/HTML5 logo.png" width="90" height="90" alt="logo HTML5">
+				<img id="css3_img" src="Resources/CSS3 logo.png" width="64" height="90" alt="logo CSS3">
+			</figure>
+			<h1>Manual HTML y CSS</h1>
+		</header>
+		<section>
+			<article>
+			<header>
+				<h2 id="ap15">Títulos &rarr; <pre class="Título">&lt;h1&gt;...&lt;h6&gt;</pre></h2>
+			</header>
+				En HTML existen unas etiquetas propias que vienen con un formato predefinido que representan títulos.<br>
+				Están ordenador de forma que el título más general empieza siendo <pre class="Normal">&lt;h1&gt;</pre> y acaba siendo el más concreto <pre class="Normal">&lt;h6&gt;</pre>.
+				<p></p>
+				Tenemos también la etiqueta <pre class="Normal">&lt;hgroup&gt;</pre> que se utiliza para agrupar varios títulos.<br>
+				Dentro de esta etiqueta SOLO puede haber declaraciones de stitulos nada más.
+			</article>
+			<hr>
+			<article>
+				<header>
+					<h2 id="ap16">Elementos de formato</h2>
+				</header>
+				<section>
+					<header>
+						<h3 id="ap17">Bastardilla <pre class="Título">&lt;i&gt;</pre> vs Énfasis <pre class="Título">&lt;em&gt;</pre></h3>
+					</header>
+					<article class="Uso">
+						<header>
+							<h4>Uso</h4>
+						</header>
+						<p>Visualmente ambos elementos se muestran igual, sin embargo dependiendo de nuestro propósito para darle este formato, debemos usar uno u otro.</p>
+						<pre class="Normal">&lt;em&gt;</pre> es un nuevo elemento semántico de HTML5, su uso debe ser para marcar con énfasis las partes importantes de un texto.<br>
+						Sin embargo, <pre class="Normal">&lt;i&gt;</pre> simplemente le da el formato al texto, sin dar ningún contexto semántico.
+					</article>
+					<article class="Ejemplo">
+						<header>
+							<h4>Ejemplo</h4>
+						</header>
+						<pre class="Normal">Las &lt;em&gt;patatas&lt;/em&gt; se hacen con &lt;i&gt;ácido sulfúrico&lt;/i&gt;.</pre>
+						<p>Las <em>patatas</em> se hacen con <i>ácido sulfúrico</i>.</p>
+					</article>
+				</section>
+				<hr>
+				<section>
+					<header>
+						<h3 id="ap18">Negrita <pre class="Título">&lt;b&gt;</pre> vs Importante <pre class="Título">&lt;strong&gt;</pre></h3>
+					</header>
+					<article class="Uso">
+						<header>
+							<h4>Uso</h4>
+						</header>
+						<p>Visualmente ambos elementos se muestran igual, sin embargo dependiendo de nuestro propósito para darle este formato, debemos usar uno u otro.</p>
+						<pre class="Normal">&lt;strong&gt;</pre> es un nuevo elemento semántico de HTML5, su uso debe ser para marcar con énfasis las partes importantes de un texto.<br>
+						Sin embargo, <pre class="Normal">&lt;b&gt;</pre> simplemente le da el formato al texto, sin dar ningún contexto semántico.
+					</article>
+					<article class="Ejemplo">
+						<header>
+							<h4>Ejemplo</h4>
+						</header>
+						<pre class="Normal">Las &lt;b&gt;patatas&lt;/b&gt; se hacen con &lt;strong&gt;ácido sulfúrico&lt;/strong&gt;.</pre>
+						<p>Las <b>patatas</b> se hacen con <strong>ácido sulfúrico</strong>.</p>
+					</article>
+				</section>
+				<hr>
+				<section>
+					<header>
+						<h3 id="ap19">Subrayado <pre class="Título">&lt;u&gt;</pre> vs Insertado <pre class="Título">&lt;ins&gt;</pre></h3>
+					</header>
+					<article class="Uso">
+						<header>
+							<h4>Uso</h4>
+						</header>
+						<p>Visualmente ambos elementos se muestran igual, sin embargo dependiendo de nuestro propósito para darle este formato, debemos usar uno u otro.</p>
+						<pre class="Normal">&lt;ins&gt;</pre> es un nuevo elemento semántico de HTML5, su uso debe ser para marcar las partes de un texto que han sido añadidos al documento.<br>
+						Sin embargo, <pre class="Normal">&lt;u&gt;</pre> simplemente le da el formato al texto, sin dar ningún contexto semántico.
+					</article>
+					<article class="Ejemplo">
+						<header>
+							<h4>Ejemplo</h4>
+						</header>
+						<pre class="Normal">Las &lt;u&gt;patatas&lt;/u&gt; se hacen con &lt;ins&gt;ácido sulfúrico&lt;/ins&gt;.</pre>
+						<p>Las <u>patatas</u> se hacen con <ins>ácido sulfúrico</ins>.</p>
+					</article>
+				</section>
+				<hr>
+				<section>
+					<header>
+						<h3 id="ap20">Borrado <pre class="Título">&lt;del&gt;</pre> vs Incorrecto <pre class="Título">&lt;s&gt;</pre></h3>
+					</header>
+					<article class="Uso">
+						<header>
+							<h4>Uso</h4>
+						</header>
+						<p>Visualmente ambos elementos se muestran igual, sin embargo dependiendo de nuestro propósito para darle este formato, debemos usar uno u otro.</p>
+						<pre class="Normal">&lt;del&gt;</pre> sirve para identificar texto que se ha eliminado de un documento.<br>
+						Mientras que <pre class="Normal">&lt;s&gt;</pre> se utiliza para textos que son incorrectos, imprecisos o irrelevantes.
+					</article>
+					<article class="Ejemplo">
+						<header>
+							<h4>Ejemplo</h4>
+						</header>
+						<pre class="Normal">Las &lt;del&gt;patatas&lt;/del&gt; se hacen con &lt;s&gt;ácido sulfúrico&lt;/s&gt;.</pre>
+						<p>Las <del>patatas</del> se hacen con <s>ácido sulfúrico</s>.</p>
+					</article>
+				</section>
+				<hr>
+				<section>
+					<header>
+						<h3 id="ap21"><pre class="Título">&lt;small&gt;</pre></h3>
+					</header>
+					Este elemento simplemente hace el texto <small>más pequeño</small>.
+				</section>
+				<hr>
+				<section>
+					<header>
+						<h3 id="ap22"><pre class="Título">&lt;mark&gt;</pre></h3>
+					</header>
+					Este elemento sirve para <mark>destacar</mark> una parte del texto.
+				</section>
+				<hr>
+				<section>
+					<header>
+						<h3 id="ap23"><pre class="Título">&lt;sub&gt;</pre></h3>
+					</header>
+					Este elemento sirve para mostrar un texto más <sub>bajo y pequeño</sub> de lo normal.
+				</section>
+				<hr>
+				<section>
+					<header>
+						<h3 id="ap24"><pre class="Título">&lt;sup&gt;</pre></h3>
+					</header>
+					Este elemento sirve para mostrar un texto más <sup>alto y pequeño</sup> de lo normal.
+				</section>
+				<hr>
+			</article>
+			<article>
+				<header>
+					<h2 id="ap25">Elementos de líneas</h2>
+				</header>
+				<section>
+					<header>
+						<h3 id="ap26">Párrafos &rarr; <pre class="Título">&lt;p&gt;</pre></h3>
+					</header>
+					La etiqueta <pre class="Normal">&lt;p&gt;Esto es un párrafo&lt;/p&gt;</pre> sirve para escribir texto seguido y que cuando acabe se inserte un salto de línea.
+				</section>
+				<hr>
+				<section>
+					<header>
+						<h3 id="ap27">Salto de línea &rarr; <pre class="Título">&lt;br&gt;</pre></h3>
+					</header>
+					Este elemento inserta un salto de línea allá donde lo pongas.<br>
+					Hay un elemento que puede ser usado para que en el caso de que al renderizar un documento vaya a poner un salto de línea, lo ponga allí:<pre class="Normal">&lt;wbr&gt;</pre>.
+				</section>
+				<hr>
+				<section>
+					<header>
+						<h3 id="ap28">Línea horizontal &rarr; <pre class="Título">&lt;hr&gt;</pre></h3>
+					</header>
+					La etiqueta <pre class="Normal">&lt;hr&gt;</pre> se utiliza para diferenciar entre dos temas distintos, visualmente se muestra como una línea.
+				</section>
+				<hr>
+				<section>
+					<header>
+						<h3 id="ap29">Texto preformateado &rarr; <pre class="Título">&lt;pre&gt;</pre></h3>
+					</header>
+					La etiqueta <pre class="Normal">&lt;pre&gt;</pre> se utiliza para insertar texto con un formato parecido a código.<br>
+					<pre class="Normal">&lt;pre&gt;System.out.println();&lt;/pre&gt;</pre>
+				</section>
+			</article>
+		</section>
+		<footer>
+			&copy; 2020 Javier Calvo García
+		</footer>
+	</body>
+</html>
+</html>

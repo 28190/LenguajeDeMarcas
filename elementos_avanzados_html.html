@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang=es>
+	<head>
+		<title>Elementos HTML</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Javier Calvo García">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header class="main_header">
+			<figure>
+				<img id="html5_img" src="Resources/HTML5 logo.png" width="90" height="90" alt="logo HTML5">
+				<img id="css3_img" src="Resources/CSS3 logo.png" width="64" height="90" alt="logo CSS3">
+			</figure>
+			<h1>Manual HTML y CSS</h1>
+		</header>
+		<section>
+			<article>
+				<header>
+					<h2 id="ap30">Listas</h2>
+				</header>
+				Existen dos tipos de listas, ordenada y no ordenada.<br>
+				Para añadir elementos a una lista utilizamos las etiquetas <pre class="Normal">&lt;li&gt;</pre>.<br>
+				Las listas tienen las siguiente propiedades en CSS:<br>
+				<ul>
+					<li>
+						<pre class="Normal">list-style-image</pre>: Esta propiedad cambia el marcador antes de cada elemento en una imagen.<br>
+						La sintaxis es la siguiente: <pre class="Normal">list-style-image: url("https://i.imgur.com/nvfBX3u.png");</pre>
+					</li>
+					<br>
+					<li>
+						<pre class="Normal">list-style-type</pre>: Esta propiedad cambia el estilo de los marcadores antes de cada elemento.
+						<ul>
+							<li>Algunos valores para listas no ordenadas: <pre class="Normal">circle, square disc</pre>.</li>
+							<li>Algunos valores para listas ordenadas: <pre class="Normal">decimal, lower-roman, lower-latin</pre>.</li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						<pre class="Normal">list-style-position</pre>: Esta propiedad cambia la posición de los marcadores antes de cada elemento.<br>
+						Este comando admite dos valores: <pre class="Normal">outside o inside</pre>.<br>
+						Lo que hace es mover los marcadores dentro (o fuera) fuera del elemento de la lista.
+					</li>
+				</ul>
+				<section>
+					<header>
+						<h3 id="ap31">Lista no ordenada &rarr; <pre class="Título">&lt;ul&gt;</pre></h3>
+					</header>
+					<article class="Ejemplo">
+						<pre>&lt;ul&gt;<br>	&lt;li&gt;<br>		Objeto 2.1<br>		&lt;ul&gt;<br>			&lt;li&gt;<br>				Objeto 3.1<br>			&lt;/li&gt;<br>			&lt;li&gt;<br>				Objeto 3.2<br>			&lt;/li&gt;<br>		&lt;/ul&gt;<br>	&lt;/li&gt;<br>	&lt;li&gt;<br>		Objeto 2.2<br>	&lt;/li&gt;<br>&lt;/ul&gt;</pre>
+					</article>
+					<! -- Lista no ordenada -->
+					<ul class=lista2>
+						<li>
+							Objeto 2.1
+							<ul class=lista2>
+								<li>
+									Objeto 3.1
+								</li>
+								<li>
+									Objeto 3.2
+								</li>
+							</ul>
+						</li>
+						<li>
+							Objeto 2.2
+						</li>
+					</ul>
+				</section>
+				<section>
+					<header>
+						<h3 id="ap32">Lista ordenada &rarr; <pre class="Título">&lt;ol&gt;</pre></h3>
+					</header>
+					En la declaración de la lista ordenada también puedes especificar:
+					<ul>
+						<li>
+							Tipos de marcadores: <pre class="Normal">&lt;ol type="value"&gt;</pre>.<br>
+							Lista de valores:
+							<ul>
+								<li>
+									1
+								</li>
+								<li>
+									a
+								</li>
+								<li>
+									A
+								</li>
+								<li>
+									i
+								</li>
+								<li>
+									I
+								</li>
+							</ul>
+						</li>
+						<br>
+						<li>
+							Número por el que empezar a contar: <pre class="Normal">&lt;ol start="value"&gt;</pre>.<br>
+						</li>
+						<br>
+						<li>
+							Si debe contar de forma ascendente o descendente: <pre  class="Normal">&lt;ol reversed&gt;</pre>.<br>
+						</li>
+					</ul>
+					<article class="Ejemplo">
+						<pre>&lt;ol start="23" reversed&gt;<br>	&lt;li&gt;<br>		Objeto 2.1<br>		&lt;ol type="a"&gt;<br>			&lt;li&gt;<br>				Objeto 3.1<br>			&lt;/li&gt;<br>			&lt;li&gt;<br>				Objeto 3.2<br>			&lt;/li&gt;<br>		&lt;/ol&gt;<br>	&lt;/li&gt;<br>	&lt;li&gt;<br>		Objeto 2.2<br>	&lt;/li&gt;<br>&lt;/ol&gt;</pre>
+					</article>
+					<! -- Lista ordenada -->
+					<ol start="23" reversed>
+						<li>
+							Objeto 2.1
+							<ol type="a">
+								<li>
+									Objeto 3.1
+								</li>
+								<li>
+									Objeto 3.2
+								</li>
+							</ol>
+						</li>
+						<li>
+							Objeto 2.2
+						</li>
+					</ol>
+				</section>
+			</article>
+			<hr>
+			<article>
+				<header>
+					<h2 id="ap33">Tablas &rarr; <pre class="Título">&lt;table&gt;</pre></h2>
+				</header>
+				En una tabla podemos distintguir las siguientes partes:
+				<ul>
+					<li>
+						Encabezado &rarr; <pre class="Normal">&lt;thead&gt;</pre>
+					</li>
+					<li>
+						Cuerpo &rarr; <pre class="Normal">&lt;tbody&gt;</pre>
+					</li>
+					<li>
+						Sumario &rarr; <pre class="Normal">&lt;tfoot&gt;</pre>
+					</li>
+					<li>
+						Leyenda &rarr; <pre class="Normal">&lt;caption&gt;</pre>
+					</li>	
+				</ul>
+				<p>Esta diferenciación es puramente semántica para que el navegador o el que lea el código entienda a que se refiere el contenido de esa etiqueta.</p>
+				Para añadir los nombres de cada columna a una tabla utilizamos las etiquetas <pre class="Normal">&lt;th&gt;</pre>.<br>
+				Para añadir filas a una tabla utilizamos las etiquetas <pre class="Normal">&lt;tr&gt;</pre>.<br>
+				Para añadir columnas a una tabla utilizamos las etiquetas <pre class="Normal">&lt;td&gt;</pre>.<br>
+				A continuación mostraremos algunas de las propiedades de CSS que se le pueden aplicar a los elementos de las tablas.
+				<section class="Ejemplo">
+					<pre>&lt;table id="TablaEjemplo1"&gt;<br>	&lt;thead&gt;<br>		&lt;tr&gt;<br>			&lt;th&gt;Asignaturas&lt;/th&gt;<br>			&lt;th&gt;Notas&lt;/th&gt;<br>		&lt;/tr&gt;<br>	&lt;/thead&gt;<br>	&lt;tbody&gt;<br>		&lt;tr&gt;<br>			&lt;td&gt;Matemáticas&lt;/td&gt;<br>			&lt;td&gt;6&lt;/td&gt;<br>		&lt;/tr&gt;<br>		&lt;tr&gt;<br>			&lt;td&gt;Inglés&lt;/td&gt;<br>			&lt;td&gt;7&lt;/td&gt;<br>		&lt;/tr&gt;<br>	&lt;/tbody&gt;<br>	&lt;tfoot&gt;<br>		&lt;tr&gt;<br>			&lt;td&gt;Media&lt;/td&gt;<br>			&lt;td&gt;6.5&lt;/td&gt;<br>		&lt;/tr&gt;<br>	&lt;/tfoot&gt;<br>&lt;/table&gt;</pre>
+					<pre>#TablaEjemplo1, #TablaEjemplo1 td, #TablaEjemplo1 th {<br>	border: 5px solid blue;<br>	border-collapse: collapse;<br>	width: 30%;<br>}<br><br>#TablaEjemplo1 th {<br>	height: 35px;<br>	color:	red;<br>	vertical-align: top;<br>}<br><br>#TablaEjemplo1 th, #TablaEjemplo1 td {<br>	padding: 15px;<br>}<br><br>#TablaEjemplo1 tfoot td {<br>	color: green;<br>	text-align: center;<br>}<br><br>#TablaEjemplo1 tr:hover {<br>	background-color: #f5f5f5;<br>}<br></pre>
+					<table id="TablaEjemplo1">
+					  <thead>
+						<tr>
+						  <th>Asignaturas</th>
+						  <th>Notas</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td>Matemáticas</td>
+						  <td>6</td>
+						</tr>
+						<tr>
+						  <td>Inglés</td>
+						  <td>7</td>
+						</tr>
+					  </tbody>
+					  <tfoot>
+						<tr>
+						  <td>Media</td>
+						  <td>6.5</td>
+						</tr>
+					  </tfoot>
+					</table>
+				</section>
+			</article>
+			<hr>
+			<article>
+				<header>
+					<h2 id="ap34">Enlaces &rarr; <pre class="Título">&lt;a&gt;</pre></h2>
+				</header>
+				Para añadir enlaces se utiliza el elemento <pre class="Normal">&lt;a href=""&gt;&lt;/a&gt;</pre><br>
+				Este texto contiene un enlace a la página de <a href="http://www.google.com">Google</a>.<br>
+				Además de usar páginas web en línea, puedes usar ficheros locales.<br>
+				Si quieres ir a una carpeta anterior, deberías usar la siguiente sintaxis <pre class="Normal">href="../pagina.html"</pre>.<br>
+				Si por ejemplo, quieres ir a otra parte de ese mismo documento, entonces tendrás que crear un punto de anclaje y en href indicar su id precedida de un #:<br>
+				<pre>&lt;a href="#test"&gt;Click aquí para ir al parrafo con id="test"&lt;/a&gt;</pre>
+				<pre>&lt;p id="test"&gt;Esto es una prueba.&lt;p&gt;</pre><br>
+				El atributo <pre class="Normal">target</pre> indica como quieres abrir el documento:
+				<ul>
+					<li>
+						<pre class="Normal">_blank</pre>: Abrir en una nueva ventana/pestaña.
+					</li>
+					<br>
+					<li>
+						<pre class="Normal">_self</pre>: Abrir en la misma pestaña.
+					</li>
+					<br>
+				</ul>
+				El atributo <pre class="Normal">title</pre> indica el nombre que tu le quieras poner si pones el ratón encima:
+			</article>
+			<hr>
+			<article>
+				<header>
+					<h2 id="ap35">Imágenes &rarr; <pre class="Título">&lt;img&gt;</pre></h2>
+				</header>
+				<pre>&lt;img src="circulos.gif" alt="Circulos" width="380" height="72" usemap="#mapacirculos"&gt;</pre><br>
+				Un ejemplo de mapa de imágenes:
+				<img src="circulos.gif" alt="Circulos" width="380" height="72" usemap="#mapacirculos">
+				<map name="mapacirculos">
+					<area alt="Amigos" shape="circle" coords="43,35,30" href="mapaCirculosAmigos.html">
+					<area alt="Novia" shape="circle" coords="139,35,30" href="mapaCirculosNovia.html">
+					<area alt="Familia" shape="circle" coords="237,35,30" href="mapaCirculosFamilia.html">
+					<area alt="Trabajo" shape="circle" coords="336,35,30" href="mapaCirculosTrabajo.html">
+				</map>
+			</article>
+			<hr>
+			<article>
+				<header>
+					<h2 id="ap36">Formularios &rarr; <pre class="Título">&lt;form&gt;</pre></h2>
+				</header>
+				Aquí podéis ver un ejemplo bastante completo de un formulario.<br>
+				<pre>&lt;form action="Ejercicio colores.html"&gt;<br>	&lt;p&gt;Nombre: &lt;input type=text name=nombre size=25 maxlength=50 value=&gt;&lt;/p&gt;<br>	&lt;p&gt;E-mail: &lt;input type=text name=Email value="" size=25 maxlength=50&gt;&lt;/p&gt;<br>	&lt;p&gt;Edad: &lt;input type=number name=valor value=19 min=0 max=199 step=2&gt;&lt;/p&gt;<br>	&lt;input type=checkbox name=c1 checked&gt;Checkbox 1<br>	&lt;input type=checkbox name=c2&gt;Checkbox 2<br>	&lt;input type=checkbox name=c3&gt;Checkbox 3<br>	&lt;p&gt;&lt;/p&gt;<br>	&lt;p&gt;&lt;/p&gt;<br>	&lt;label for="1"&gt;Hombre&lt;/label&gt;<br>	&lt;input id=1 type=radio name=radio value=uno checked&gt;<br>	&lt;p&gt;&lt;/p&gt;<br>	&lt;label for="1"&gt;Mujer&lt;/label&gt;<br>	&lt;input id=2 type=radio name=radio value=dos&gt;<br>	&lt;p&gt;&lt;/p&gt;<br>	&lt;label for="1"&gt;Otro&lt;/label&gt;<br>	&lt;input id=3 type=radio name=radio value=tres&gt;<br>	&lt;p&gt;&lt;/p&gt;<br>	&lt;p&gt;<br>		&lt;label for="1"&gt;Hombre&lt;/label&gt;<br>		&lt;input type=radio name=radio2 value=cuatro&gt;<br>		&lt;label for="1"&gt;Mujer&lt;/label&gt;<br>		&lt;input type=radio name=radio2 value=cinco checked&gt;<br>		&lt;label for="1"&gt;Otro&lt;/label&gt;<br>		&lt;input type=radio name=radio2 value=seis&gt;&lt;p&gt;&lt;/p&gt;<br>	&lt;/p&gt;<br>	&lt;p&gt;<br>		&lt;select multiple name=menum size=3&gt;<br>			&lt;option selected value=uno&gt;uno&lt;/option&gt;<br>			&lt;option value=dos&gt;dos&lt;/option&gt;<br>			&lt;option selected value=tres&gt;tres&lt;/option&gt;<br>			&lt;option value=cuatro&gt;cuatro&lt;/option&gt;<br>			&lt;option value=cinco&gt;cinco&lt;/option&gt;<br>		&lt;/select&gt;<br>	&lt;/p&gt;<br>	&lt;p&gt;<br>		&lt;select name=menuo&gt;<br>			&lt;option selected value=uno&gt;uno&lt;/option&gt;<br>			&lt;optgroup label=dos&gt;<br>				&lt;option value=dos_a&gt;dos - a&lt;/option&gt;<br>				&lt;option value=dos_b&gt;dos - b&lt;/option&gt;<br>			&lt;/optgroup&gt;<br>			&lt;option selected value=tres&gt;tres&lt;/option&gt;<br>		&lt;/select&gt;<br>	&lt;/p&gt;<br>	&lt;textarea name=texto_largo cols=20 rows=6&gt;<br>		Este texto está contenido en el cuadro del editor.<br>	&lt;/textarea&gt;<br>	&lt;textarea readonly name=texto_largo cols=20 rows=6&gt;<br>		Este texto no se puede editar.<br>	&lt;/textarea&gt;<br>	&lt;input name=sexo list=sexos&gt;<br>	&lt;datalist id=sexos&gt;<br>		&lt;option value=Mujer&gt;<br>		&lt;option value=Hombre&gt;<br>	&lt;/datalist&gt;<br>	&lt;br&gt;<br>	Birthday: &lt;input type="date" min=2020-01-16 max=2021-01-16 name="bday"&gt;&lt;br&gt;<br>	Select your favorite color: &lt;input type="color" name="favcolor" value="#ff0000"&gt;<br>	&lt;p&gt;&lt;input type=submit name=Prueba value=Enviar action="Ejercicio colores.html"&gt;&lt;/p&gt;<br>&lt;/form&gt;<br></pre>
+				<form action="Ejercicio colores.html">
+					<p>Nombre: <input type=text name=nombre size=25 maxlength=50 value=></p>
+					<p>E-mail: <input type=text name=Email value="" size=25 maxlength=50></p>
+					<p>Edad: <input type=number name=valor value=19 min=0 max=199 step=2></p>
+					<input type=checkbox name=c1 checked>Checkbox 1
+					<input type=checkbox name=c2>Checkbox 2
+					<input type=checkbox name=c3>Checkbox 3
+					<p></p>
+					<p></p>
+					<label for="1">Hombre</label>
+					<input id=1 type=radio name=radio value=uno checked>
+					<p></p>
+					<label for="1">Mujer</label>
+					<input id=2 type=radio name=radio value=dos>
+					<p></p>
+					<label for="1">Otro</label>
+					<input id=3 type=radio name=radio value=tres>
+					<p></p>
+					<p>
+						<label for="1">Hombre</label>
+						<input type=radio name=radio2 value=cuatro>
+						<label for="1">Mujer</label>
+						<input type=radio name=radio2 value=cinco checked>
+						<label for="1">Otro</label>
+						<input type=radio name=radio2 value=seis><p></p>
+					</p>
+					<p>
+						<select multiple name=menum size=3>
+							<option selected value=uno>uno</option>
+							<option value=dos>dos</option>
+							<option selected value=tres>tres</option>
+							<option value=cuatro>cuatro</option>
+							<option value=cinco>cinco</option>
+						</select>
+					</p>
+					<p>
+						<select name=menuo>
+							<option selected value=uno>uno</option>
+							<optgroup label=dos>
+								<option value=dos_a>dos - a</option>
+								<option value=dos_b>dos - b</option>
+							</optgroup>
+							<option selected value=tres>tres</option>
+						</select>
+					</p>
+					<textarea name=texto_largo cols=20 rows=6>
+						Este texto está contenido en el cuadro del editor.
+					</textarea>
+					<textarea readonly name=texto_largo cols=20 rows=6>
+						Este texto no se puede editar.
+					</textarea>
+					<input name=sexo list=sexos>
+					<datalist id=sexos>
+						<option value=Mujer>
+						<option value=Hombre>
+					</datalist>
+					<br>
+					Birthday: <input type="date" min=2020-01-16 max=2021-01-16 name="bday"><br>
+					Select your favorite color: <input type="color" name="favcolor" value="#ff0000">
+					<p><input type=submit name=Prueba value=Enviar action="Ejercicio colores.html"></p>
+				</form>
+			</article>
+			<hr>
+			<article>
+					<h2 id="ap37">Multimedia &rarr; <pre class="Título">&lt;audio&gt;</pre></h2>
+				<pre>&lt;audio controls src="pollito.mp3#t=16,38" loop&gt;<br>	Your browser does not support the audio element.<br>&lt;/audio&gt;</pre><br>
+				<audio controls src="pollito.mp3#t=16,38" loop>
+					Your browser does not support the audio element.
+				</audio>
+			</article>
+		</section>
+		<footer>
+			&copy; 2020 Javier Calvo García
+		</footer>
+	</body>
+</html>
+</html>

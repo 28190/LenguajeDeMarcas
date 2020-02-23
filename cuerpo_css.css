@@ -1,0 +1,41 @@
+.ModeloCaja {
+	position: relative;
+	margin-top: 60px;
+}
+
+.ModeloCaja modelo_de_caja {
+	position: absolute;
+	top: 50%;
+	left: 78%;
+	transform: translateY(-50%);
+	width: 32%;
+}
+
+modelo_de_caja margen {
+	background: #f9cc9d;
+	padding: 78px 35px;
+	border: 1px dashed black;
+}
+
+modelo_de_caja borde {
+	background: #fddd9b;
+	padding: 55px 30px;
+	border: 1px solid black;
+}
+
+modelo_de_caja relleno {
+	background: #c3d08b;
+	padding: 35px 20px;
+	border: 1px dotted black;
+}
+
+modelo_de_caja contenido {
+	background: #8cb6c0;
+	padding: 15px 10px;
+	border: 1px solid black;
+}
+
+.ModeloCaja table#modelo_de_caja {
+	float: right;
+	margin-right: 400px;
+}
